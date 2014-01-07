@@ -40,9 +40,6 @@ module Dionochner
     # you really want to skip validation of your locale you can set
     # I18n.enforce_available_locales = false to avoid this message.
     I18n.enforce_available_locales = false
-
-    # Heroku deployment
-    config.assets.initialize_on_precompile = false
   end
 end
 
