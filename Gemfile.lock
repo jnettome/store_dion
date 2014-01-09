@@ -1,4 +1,16 @@
 GIT
+  remote: git://github.com/heavenstudio/pag_seguro.git
+  revision: 3b034371c1da54580cd4d81062cf0fceb60d3aa9
+  branch: master
+  specs:
+    pag_seguro (0.5.5)
+      activemodel
+      activesupport
+      haml (!= 3.1.5)
+      nokogiri
+      rest-client (~> 1.6.7)
+
+GIT
   remote: git://github.com/jnettome/spree_pagseguro.git
   revision: bc99dd2d2f6e27651df7a912d7e3157a67d9831d
   specs:
@@ -214,12 +226,6 @@ GEM
       mini_portile (~> 0.5.0)
     nori (1.1.5)
     orm_adapter (0.5.0)
-    pag_seguro (0.5.5)
-      activemodel
-      activesupport
-      haml (!= 3.1.5)
-      nokogiri
-      rest-client (~> 1.6.7)
     paperclip (3.4.2)
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
@@ -330,6 +336,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
+  pag_seguro!
   pg
   rails (= 4.0.2)
   rails_12factor
