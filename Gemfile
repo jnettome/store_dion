@@ -46,9 +46,6 @@ gem 'spree_gateway', github: 'spree/spree_gateway', branch: '2-1-stable'
 # Spree i18n
 gem 'spree_i18n', github: 'spree/spree_i18n', branch: '2-1-stable'
 
-# Spree Fancy theme
-gem 'spree_fancy', :github => 'spree/spree_fancy', :branch => '2-1-stable'
-
 # Spree Pagseguro
 gem 'spree_pagseguro', github: 'jnettome/spree_pagseguro'
 

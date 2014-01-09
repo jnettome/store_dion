@@ -11,5 +11,4 @@
 
 //= require_tree .
 //= require admin/spree_i18n
-//= require admin/spree_fancy
 //= require admin/spree_pagseguro
