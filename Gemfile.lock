@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jnettome/spree_pagseguro.git
-  revision: 5f80535afa45596eaee99351f1500a920f508c79
+  revision: bd57e56fb0f0c4c66201d6d162e8c1060c2af4fc
   specs:
     spree_pagseguro (2.1.3)
       pag_seguro (>= 0.2.3)
