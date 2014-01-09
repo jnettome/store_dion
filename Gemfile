@@ -6,7 +6,7 @@ ruby '2.0.0'
 gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', group: [:test, :development]
+gem 'sqlite3', group: [:test]
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -49,6 +49,9 @@ gem 'spree_i18n', github: 'spree/spree_i18n', branch: '2-1-stable'
 # Spree Fancy theme
 gem 'spree_fancy', :github => 'spree/spree_fancy', :branch => '2-1-stable'
 
+# Spree Pagseguro
+gem 'spree_pagseguro', github: 'jnettome/spree_pagseguro'
+
 # Deploy on Heroku
 gem 'rails_12factor', group: :production
-gem 'pg', group: :production
+gem 'pg', group: [:production, :development]
