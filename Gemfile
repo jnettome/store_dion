@@ -61,7 +61,7 @@ gem 'pg', group: [:production, :development]
 gem 'spree_product_assembly', github: 'spree/spree-product-assembly', branch: '2-1-stable'
 
 # Add peace to your life while developing themes
-gem 'spree_peace', path: '../spree_peace'
+gem 'spree_peace', path: './vendor/spree_peace'
 
 # Static content
 gem 'spree_static_content', github: 'spree/spree_static_content', branch: '2-1-stable'
