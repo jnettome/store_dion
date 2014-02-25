@@ -6,15 +6,16 @@
 # In order to initialize a setting do:
 # config.setting_name = 'new value'
 Spree.config do |config|
-  # Example:
-  # Uncomment to override the default site name.
-  config.site_name = "Dion Ochner - Loja Virtual"
+  config.admin_interface_logo = 'logo/dionadm.png'
+  config.logo = 'logo/dionadm.png'
+
+  country = Spree::Country.find_by_name('Brasil')
+  config.default_country_id = country.id if country.present?
 end
 
 Spree.user_class = "Spree::LegacyUser"
 
 # Fixing language
 # ---------------
-#
-SpreeI18n::Config.available_locales = [:'pt-BR', :en] # Translation forms
-SpreeI18n::Config.supported_locales = [:'pt-BR', :en] # Frontend select box
+SpreeI18n::Config.available_locales = [:'pt-BR'] # Translation forms
+SpreeI18n::Config.supported_locales = [:'pt-BR'] # Frontend select box

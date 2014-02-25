@@ -21,7 +21,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 3.1.0'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -34,8 +34,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Stop talking!
+gem 'quiet_assets', :group => :development
+
 # Spree stable core
-gem 'spree', github: 'spree/spree', branch: '2-1-stable'
+gem 'spree', '~> 2.1.4', github: 'spree/spree', branch: '2-1-stable'
 
 # Spree Devise authetication
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-1-stable'
@@ -53,3 +56,15 @@ gem 'spree_pagseguro', github: 'jnettome/spree_pagseguro'
 # Deploy on Heroku
 gem 'rails_12factor', group: :production
 gem 'pg', group: [:production, :development]
+
+# Adds oportunity to make bundle of products
+gem 'spree_product_assembly', github: 'spree/spree-product-assembly', branch: '2-1-stable'
+
+# Add peace to your life while developing themes
+gem 'spree_peace', path: '../spree_peace'
+
+# Static content
+gem 'spree_static_content', github: 'spree/spree_static_content', branch: '2-1-stable'
+
+# Correios
+gem 'spree_correios', github: 'mcorp/spree_correios', branch: '2-1-stable'
