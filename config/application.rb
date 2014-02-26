@@ -34,6 +34,12 @@ module Dionochner
     config.i18n.available_locales = [:'pt-BR', :en]
     config.i18n.default_locale = :'pt-BR'
 
+    # Fixing s3 issue
+    config.paperclip_defaults = {
+      storage: :s3,
+      s3_host_name: 'dionochner-heroku.s3.amazonaws.com'
+    }
+
     # TODO Deprecation Warning
     # ------------------------
     # [deprecated] I18n.enforce_available_locales will default to true in the future. If
@@ -42,4 +48,3 @@ module Dionochner
     I18n.enforce_available_locales = false
   end
 end
-
