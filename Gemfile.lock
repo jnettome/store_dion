@@ -11,14 +11,6 @@ GIT
       rest-client (~> 1.6.7)
 
 GIT
-  remote: git://github.com/jnettome/spree_pagseguro.git
-  revision: 97cd81a6d8f05b8cb0f7b8f26e8b3b15469deacc
-  specs:
-    spree_pagseguro (2.1.3)
-      pag_seguro
-      spree_core (~> 2.1.3)
-
-GIT
   remote: git://github.com/mcorp/spree_correios.git
   revision: 52d366130e10aa5a4ce05adad6a892816dfbd9a8
   branch: 2-1-stable
@@ -127,11 +119,13 @@ GIT
     spree_static_content (2.1.0.beta)
       spree_core (~> 2.1.0)
 
-PATH
-  remote: ./vendor/spree_peace
+GIT
+  remote: git://github.com/spreesso/spree_pagseguro.git
+  revision: 9ef7ed0095706ad39b8fae32af676d3d67ac24cf
   specs:
-    spree_peace (2.1.4)
-      spree_core (~> 2.1.4)
+    spree_pagseguro (2.1.3)
+      pag_seguro
+      spree_core (~> 2.1.3)
 
 GEM
   remote: https://rubygems.org/
@@ -211,6 +205,7 @@ GEM
       log-me (~> 0.0.6)
       nokogiri (~> 1.6.1)
       sax-machine (~> 0.2.1)
+    daemons (1.1.9)
     debug_inspector (0.0.2)
     deface (1.0.0)
       colorize (>= 0.5.8)
@@ -225,6 +220,7 @@ GEM
     devise-encryptable (0.1.2)
       devise (>= 2.1.0)
     erubis (2.7.0)
+    eventmachine (1.0.3)
     execjs (2.0.2)
     ffaker (1.23.0)
     globalize (4.0.0)
@@ -352,6 +348,10 @@ GEM
     sqlite3 (1.3.8)
     state_machine (1.2.0)
     stringex (1.5.1)
+    thin (1.5.1)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
     thor (0.18.1)
     thread_safe (0.1.3)
       atomic
@@ -377,6 +377,9 @@ GEM
     wasabi (2.5.1)
       httpi (~> 1.0)
       nokogiri (>= 1.4.0)
+    xray-rails (0.1.12)
+      coffee-rails
+      rails (>= 3.1.0)
 
 PLATFORMS
   ruby
@@ -400,9 +403,10 @@ DEPENDENCIES
   spree_gateway!
   spree_i18n!
   spree_pagseguro!
-  spree_peace!
   spree_product_assembly!
   spree_static_content!
   sqlite3
+  thin
   turbolinks
   uglifier (>= 1.3.0)
+  xray-rails

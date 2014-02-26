@@ -48,7 +48,7 @@ gem 'spree_i18n', github: 'spree/spree_i18n', branch: '2-1-stable'
 
 # Spree Pagseguro
 gem 'pag_seguro', github: 'heavenstudio/pag_seguro', branch: 'master'
-gem 'spree_pagseguro', github: 'jnettome/spree_pagseguro'
+gem 'spree_pagseguro', github: 'spreesso/spree_pagseguro'
 
 # Deploy on Heroku
 gem 'rails_12factor', group: :production
@@ -58,7 +58,7 @@ gem 'pg', group: [:production, :development]
 gem 'spree_product_assembly', github: 'spree/spree-product-assembly', branch: '2-1-stable'
 
 # Add peace to your life while developing themes
-gem 'spree_peace', path: '../spree_peace'
+# gem 'spree_peace', path: '../../code/spree_peace'
 
 # Static content
 gem 'spree_static_content', github: 'spree/spree_static_content', branch: '2-1-stable'
@@ -70,4 +70,7 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'quiet_assets'
+  gem 'thin'
+
+  gem 'xray-rails'
 end
