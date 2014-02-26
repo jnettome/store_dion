@@ -34,9 +34,6 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-# Stop talking!
-gem 'quiet_assets', :group => :development
-
 # Spree stable core
 gem 'spree', '~> 2.1.4', github: 'spree/spree', branch: '2-1-stable'
 
@@ -61,10 +58,16 @@ gem 'pg', group: [:production, :development]
 gem 'spree_product_assembly', github: 'spree/spree-product-assembly', branch: '2-1-stable'
 
 # Add peace to your life while developing themes
-gem 'spree_peace', path: './vendor/spree_peace'
+gem 'spree_peace', path: '../spree_peace'
 
 # Static content
 gem 'spree_static_content', github: 'spree/spree_static_content', branch: '2-1-stable'
 
 # Correios
 gem 'spree_correios', github: 'mcorp/spree_correios', branch: '2-1-stable'
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'quiet_assets'
+end
