@@ -111,8 +111,9 @@ GIT
     spree_static_content (2.1.0.beta)
       spree_core (~> 2.1.0)
 
-PATH
-  remote: ../../spreesso/spree_pagseguro
+GIT
+  remote: git://github.com/spreesso/spree_pagseguro.git
+  revision: 9ef7ed0095706ad39b8fae32af676d3d67ac24cf
   specs:
     spree_pagseguro (2.1.3)
       pag_seguro
