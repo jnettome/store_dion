@@ -1,4 +1,13 @@
 GIT
+  remote: git://github.com/cassioscabral/spree2_pagseguro.git
+  revision: ebad24bec4d0a27c079c63561b1590e59e51b206
+  specs:
+    spree2_pagseguro (0.0.1)
+      pag_seguro (~> 0.5.5)
+      rails (~> 4.0.0)
+      spree_core (~> 2.1.3)
+
+GIT
   remote: git://github.com/heavenstudio/pag_seguro.git
   revision: 3b034371c1da54580cd4d81062cf0fceb60d3aa9
   branch: master
@@ -111,22 +120,14 @@ GIT
     spree_static_content (2.1.0.beta)
       spree_core (~> 2.1.0)
 
-GIT
-  remote: git://github.com/spreesso/spree_pagseguro.git
-  revision: 9ef7ed0095706ad39b8fae32af676d3d67ac24cf
-  specs:
-    spree_pagseguro (2.1.3)
-      pag_seguro
-      spree_core (~> 2.1.3)
-
 GEM
   remote: https://rubygems.org/
   specs:
-    actionmailer (4.0.2)
-      actionpack (= 4.0.2)
+    actionmailer (4.0.3)
+      actionpack (= 4.0.3)
       mail (~> 2.5.4)
-    actionpack (4.0.2)
-      activesupport (= 4.0.2)
+    actionpack (4.0.3)
+      activesupport (= 4.0.3)
       builder (~> 3.1.0)
       erubis (~> 2.7.0)
       rack (~> 1.5.2)
@@ -142,16 +143,16 @@ GEM
       json (~> 1.7)
       money (< 7.0.0)
       nokogiri (~> 1.4)
-    activemodel (4.0.2)
-      activesupport (= 4.0.2)
+    activemodel (4.0.3)
+      activesupport (= 4.0.3)
       builder (~> 3.1.0)
-    activerecord (4.0.2)
-      activemodel (= 4.0.2)
+    activerecord (4.0.3)
+      activemodel (= 4.0.3)
       activerecord-deprecated_finders (~> 1.0.2)
-      activesupport (= 4.0.2)
+      activesupport (= 4.0.3)
       arel (~> 4.0.0)
     activerecord-deprecated_finders (1.0.3)
-    activesupport (4.0.2)
+    activesupport (4.0.3)
       i18n (~> 0.6, >= 0.6.4)
       minitest (~> 4.2)
       multi_json (~> 1.3)
@@ -162,8 +163,8 @@ GEM
     akami (1.2.0)
       gyoku (>= 0.4.0)
       nokogiri (>= 1.4.0)
-    arel (4.0.1)
-    atomic (1.1.14)
+    arel (4.0.2)
+    atomic (1.1.15)
     awesome_nested_set (3.0.0.rc.3)
       activerecord (>= 4.0.0, < 5)
     aws-sdk (1.27.0)
@@ -276,7 +277,7 @@ GEM
     pg (0.17.1)
     polyamorous (0.6.4)
       activerecord (>= 3.0)
-    polyglot (0.3.3)
+    polyglot (0.3.4)
     quiet_assets (1.0.2)
       railties (>= 3.1, < 5.0)
     rabl (0.9.3)
@@ -284,13 +285,13 @@ GEM
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
-    rails (4.0.2)
-      actionmailer (= 4.0.2)
-      actionpack (= 4.0.2)
-      activerecord (= 4.0.2)
-      activesupport (= 4.0.2)
+    rails (4.0.3)
+      actionmailer (= 4.0.3)
+      actionpack (= 4.0.3)
+      activerecord (= 4.0.3)
+      activesupport (= 4.0.3)
       bundler (>= 1.3.0, < 2.0)
-      railties (= 4.0.2)
+      railties (= 4.0.3)
       sprockets-rails (~> 2.0.0)
     rails-i18n (0.7.4)
       i18n (~> 0.5)
@@ -299,9 +300,9 @@ GEM
       rails_stdout_logging
     rails_serve_static_assets (0.0.2)
     rails_stdout_logging (0.0.3)
-    railties (4.0.2)
-      actionpack (= 4.0.2)
-      activesupport (= 4.0.2)
+    railties (4.0.3)
+      actionpack (= 4.0.3)
+      activesupport (= 4.0.3)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     raindrops (0.12.0)
@@ -335,7 +336,7 @@ GEM
     select2-rails (3.4.9)
       sass-rails
       thor (~> 0.14)
-    sprockets (2.10.1)
+    sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
@@ -352,8 +353,8 @@ GEM
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
     thor (0.18.1)
-    thread_safe (0.1.3)
-      atomic
+    thread_safe (0.2.0)
+      atomic (>= 1.1.7, < 2)
     tilt (1.4.1)
     treetop (1.4.15)
       polyglot
@@ -398,16 +399,16 @@ DEPENDENCIES
   pag_seguro!
   pg
   quiet_assets
-  rails (= 4.0.2)
+  rails (= 4.0.3)
   rails_12factor
   sass-rails (~> 4.0.0)
   sdoc
   spree (~> 2.1.4)!
+  spree2_pagseguro!
   spree_auth_devise!
   spree_correios!
   spree_gateway!
   spree_i18n!
-  spree_pagseguro!
   spree_static_content!
   sqlite3
   thin

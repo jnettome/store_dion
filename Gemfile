@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+gem 'rails', '4.0.3'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: [:test]
@@ -48,7 +48,8 @@ gem 'spree_i18n', github: 'spree/spree_i18n', branch: '2-1-stable'
 
 # Spree Pagseguro
 gem 'pag_seguro', github: 'heavenstudio/pag_seguro', branch: 'master'
-gem 'spree_pagseguro', github: 'spreesso/spree_pagseguro' # path: '../../spreesso/spree_pagseguro'
+# gem 'spree_pagseguro', github: 'spreesso/spree_pagseguro' # path: '../../spreesso/spree_pagseguro'
+gem 'spree2_pagseguro', github: 'cassioscabral/spree2_pagseguro'
 
 # Deploy on Heroku
 gem 'rails_12factor', group: :production

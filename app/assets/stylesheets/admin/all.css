@@ -8,7 +8,6 @@
  *= require admin/spree_backend
  *= require_self
  *= require_tree .
- *= require admin/spree_pagseguro
 */
 
 #logo {
