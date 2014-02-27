@@ -12,7 +12,11 @@ Spree.config do |config|
   country = Spree::Country.find_by_name('Brasil')
   config.default_country_id = country.id if country.present?
 
-  config.attachment_path = 'products/:id/:style/:basename.:extension'
+  config.use_s3          = true
+  config.attachment_url  = ":s3_alias_url"
+  config.s3_access_key   = "AKIAIXV6JLWCXEMJLKEA"
+  config.s3_secret       = "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"
+  config.s3_bucket       = "dionochner-heroku"
   config.s3_host_alias   = "dionochner-heroku.s3.amazonaws.com"
 end
 

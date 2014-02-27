@@ -1,0 +1,6 @@
+pt-BR:
+  spree:
+    admin:
+      tab:
+        configuration: "Config"
+        pages: "Páginas"

@@ -48,15 +48,18 @@ gem 'spree_i18n', github: 'spree/spree_i18n', branch: '2-1-stable'
 
 # Spree Pagseguro
 gem 'pag_seguro', github: 'heavenstudio/pag_seguro', branch: 'master'
-gem 'spree_pagseguro', github: 'spreesso/spree_pagseguro'
+gem 'spree_pagseguro', path: '../../spreesso/spree_pagseguro'#github: 'spreesso/spree_pagseguro'
 
 # Deploy on Heroku
 gem 'rails_12factor', group: :production
 gem 'pg', group: [:production, :development]
 gem 'newrelic_rpm', group: :production
 
+gem 'unicorn'
+gem 'foreman'
+
 # Adds oportunity to make bundle of products
-gem 'spree_product_assembly', github: 'spree/spree-product-assembly', branch: '2-1-stable'
+# gem 'spree_product_assembly', github: 'spree/spree-product-assembly', branch: '2-1-stable'
 
 # Add peace to your life while developing themes
 # gem 'spree_peace', path: '../../code/spree_peace'
