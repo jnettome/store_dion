@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140225195252) do
+ActiveRecord::Schema.define(version: 20140227184955) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -273,6 +273,12 @@ ActiveRecord::Schema.define(version: 20140225195252) do
   add_index "spree_orders", ["number"], name: "index_spree_orders_on_number", using: :btree
   add_index "spree_orders", ["user_id"], name: "index_spree_orders_on_user_id", using: :btree
 
+  create_table "spree_pag_seguro_payments", force: true do |t|
+    t.integer  "payment_id"
+    t.string   "code"
+    t.datetime "date"
+  end
+
   create_table "spree_pages", force: true do |t|
     t.string   "title"
     t.text     "body"
@@ -318,6 +324,16 @@ ActiveRecord::Schema.define(version: 20140225195252) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "display_on"
+  end
+
+  create_table "spree_payment_notifications", force: true do |t|
+    t.text     "params"
+    t.string   "status"
+    t.string   "transaction_id"
+    t.integer  "order_id"
+    t.string   "notification_code"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "spree_payments", force: true do |t|
