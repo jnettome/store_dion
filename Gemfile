@@ -53,6 +53,7 @@ gem 'spree_pagseguro', github: 'spreesso/spree_pagseguro'
 # Deploy on Heroku
 gem 'rails_12factor', group: :production
 gem 'pg', group: [:production, :development]
+gem 'newrelic_rpm', group: :production
 
 # Adds oportunity to make bundle of products
 gem 'spree_product_assembly', github: 'spree/spree-product-assembly', branch: '2-1-stable'
