@@ -11,6 +11,9 @@ Spree.config do |config|
 
   country = Spree::Country.find_by_name('Brasil')
   config.default_country_id = country.id if country.present?
+
+  config.attachment_path = 'products/:id/:style/:basename.:extension'
+  config.s3_host_alias   = "dionochner-heroku.s3.amazonaws.com"
 end
 
 Spree.user_class = "Spree::LegacyUser"

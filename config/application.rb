@@ -36,8 +36,7 @@ module Dionochner
 
     # Fixing s3 issue
     config.paperclip_defaults = {
-      storage: :s3,
-      url: :s3_domain_url
+      storage: :s3
     }
 
     # TODO Deprecation Warning
