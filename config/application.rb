@@ -37,7 +37,7 @@ module Dionochner
     # Fixing s3 issue
     config.paperclip_defaults = {
       storage: :s3,
-      s3_host_name: 'dionochner-heroku.s3.amazonaws.com'
+      url: :s3_domain_url
     }
 
     # TODO Deprecation Warning
